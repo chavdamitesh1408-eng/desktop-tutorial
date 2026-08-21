@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Ryu Interactive</title>
+		<link rel="stylesheet" href="style.css">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+	</head>
+	<body>
+		<div class="bg-grid"></div>
+		<div class="bg-fx">
+			<div class="bg-glow bg-glow--a"></div>
+			<div class="bg-glow bg-glow--b"></div>
+		</div>
+		<div class="bg-noise"></div>
+		<div class="crt"></div>
+		<header class="topbar" aria-label="Primary navigation">
+			<a class="brand" href="#home" aria-label="Ryu Interactive home">
+				<img src="assets/logo/logo.png" alt="Ryu Interactive logo">
+				<span>Ryu Interactive</span>
+			</a>
+			<nav class="nav-links">
+				<!--<a href="#home">Home</a>-->
+				<a href="#games">Projects</a>
+				<a href="#about">About</a>
+				<a href="#contact">Contact</a>
+				<a href="privacy _policy.html">Privacy Policy</a>	
+			</nav>
+			<div class="social-icons" aria-label="Social links">
+				<a href="https://github.com/WarDragon3399" target="_blank" rel="noreferrer" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+				<a href="https://wardragon3399.itch.io/" target="_blank" rel="noreferrer" aria-label="itch.io"><i class="fa-brands fa-itch-io"></i></a>
+				<a href="https://www.youtube.com/@WD-Games-3399" target="_blank" rel="noreferrer" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+				<a href="mailto:parthrathodtk@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+			</div>
+		</header>
+
+		<main>
+			<!--<section id="home" class="hero section-panel">
+				<p class="eyebrow">Independent Game Studio</p>
+				<h1>Ryu Interactive</h1>
+				<p class="subtitle">Indie Game Developer crafting focused arcade, action, and experimental play experiences.</p>
+				<div class="hero-actions">
+					<a href="#games" class="btn">View Games</a>
+					<a href="#contact" class="btn secondary">Contact</a>
+				</div>
+			</section>-->
+
+			<section id="games" class="section-panel games-section">
+				<div class="section-heading">
+					<p class="eyebrow">Projects</p>
+					<!--<h2>Playable ideas, prototypes, and releases.</h2>-->
+				</div>
+				<div class="carousel-shell">
+					<button class="carousel-control prev" type="button" aria-label="Previous game"><i class="fa-solid fa-chevron-left"></i></button>
+					<div id="gamesCarousel" class="games-carousel" aria-live="polite"></div>
+					<button class="carousel-control next" type="button" aria-label="Next game"><i class="fa-solid fa-chevron-right"></i></button>
+				</div>
+			</section>
+
+			<section id="about" class="section-panel about-section">
+				<div class="section-heading">
+					<p class="eyebrow">About</p>
+				</div>
+				<p> Ryu Interactive is my independent game development label, 
+					where I publish personal projects, prototypes, game jam entries, and tools. 
+					Some showcased projects were created collaboratively during game jams or team projects.
+				</p>
+			</section>
+
+			<section id="contact" class="section-panel contact-section">
+				<div class="section-heading">
+					<p class="eyebrow">Contact</p>
+					
+				</div>
+				<div class="contact-grid">
+					<a href="https://github.com/WarDragon3399" target="_blank" rel="noreferrer"><i class="fa-brands fa-github"></i><span>GitHub</span></a>
+					<a href="mailto:parthrathodtk@gmail.com"><i class="fa-solid fa-envelope"></i><span>Email</span></a>
+					<a href="https://www.youtube.com/@WD-Games-3399" target="_blank" rel="noreferrer" aria-label="YouTube"><i class="fa-brands fa-youtube"></i><span>YouTube</span></a>
+					<a href="https://wardragon3399.itch.io/" target="_blank" rel="noreferrer" aria-label="itch.io"><i class="fa-brands fa-itch-io"></i><span>itch.io</span></a>
+					<a href="https://discord.gg/d8dQwC4GrB" target="_blank" rel="noreferrer"><i class="fa-brands fa-discord"></i><span>Discord</span></a>
+					<a href="https://www.linkedin.com/in/parthrtahod3399/" target="_blank" rel="noreferrer"><i class="fa-brands fa-linkedin"></i><span>LinkedIn</span></a>
+					<a href="https://x.com/WarDragon3399" target="_blank" rel="noreferrer"><i class="fa-brands fa-x-twitter"></i><span>X</span></a>
+					<a href="https://www.reddit.com/user/wardragon3399/" target="_blank" rel="noreferrer"><i class="fa-brands fa-reddit"></i><span>Reddit</span></a>
+					<a href="https://www.patreon.com/cw/Wardragon3399" target="_blank" rel="noreferrer"><i class="fa-brands fa-patreon"></i><span>Patreon</span></a>
+				</div>
+			</section>
+		</main>
+		<footer class="site-footer">
+			<p>
+				© <span id="copyright-year"></span> Ryu Interactive.
+				World is Game, I like to hack it...!
+			</p>
+		</footer>
+		<script src="games.js"></script>
+		<script src="script.js"></script>
+	</body>
+</html>
